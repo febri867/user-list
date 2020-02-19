@@ -1,0 +1,80 @@
+@import './_init.scss';
+
+body {
+  font-family: 'Ubuntu-Bold';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+.header{
+  max-width: 100%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px !important;
+}
+
+.brand{
+  height: 100%;
+  width: fit-content;
+  display: inline-block;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.container--card{
+  width: 100vw;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  > div {
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+      height: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .box-container {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    white-space: nowrap;
+
+    &:after, &:before {
+      position: absolute;
+      content: '';
+      width: 50px;
+      height: 100%;
+    }
+
+    &:after {
+      left: 0;
+      background: linear-gradient(to left, transparent, white, white);
+    }
+
+    &:before {
+      right: 0;
+      background: linear-gradient(to right, transparent, white, white);
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .App{
+    overflow-x: hidden;
+  }
+
+  .box-container{
+    margin: auto !important;
+    &:after, &:before {
+     display: none;
+      overflow-x: hidden;
+      white-space: nowrap;
+    }
+  }
+}
