@@ -3,10 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "cra-template": "1.0.2",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
+    "react-bidirectional-infinite-scroll": "^2.0.1",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.4.0"
+    "react-redux": "^7.1.3",
+    "react-scripts": "3.4.0",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^8.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
