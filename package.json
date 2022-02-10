@@ -5,7 +5,7 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "cra-template": "1.0.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.12.0",
     "react-bidirectional-infinite-scroll": "^2.0.1",
     "react-dom": "^16.12.0",
